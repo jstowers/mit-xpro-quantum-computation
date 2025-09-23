@@ -4,7 +4,7 @@ Fall 2025
 
 ## Overview
 
-This professional certificate program is divided into two four-week courses:
+MIT's professional certificate program is divided into two four-week courses:
 
 ### Course 1: Practical Realities of Quantum Computation and Quantum Communication
 
