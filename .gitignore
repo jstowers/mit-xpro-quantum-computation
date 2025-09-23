@@ -1,0 +1,5 @@
+# Files ignored by GitHub
+# updated: Monday, September 22, 2025
+
+# MacOS folder metadata
+.DS_Store
