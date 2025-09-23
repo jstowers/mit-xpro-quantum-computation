@@ -2,6 +2,8 @@
 
 Monday, September 22, 2025
 
+---
+
 ## Four Postulates of Quantum Mechanics
 
 1. __Wavefunction__
@@ -20,7 +22,7 @@ Every observable is represented by a corresponding mathematical _operator_ that 
 
 When a physical property is measured, the possible outcomes are restricted to the _eigenvalues_ of the corresponding operator.
 
-After measurement, the quantum state instantaneously _collapses_ into a the specific state (eigenvector) associated with the measured eigenvalue.
+After measurement, the quantum state instantaneously _collapses_ into the specific state (eigenvector) associated with the measured eigenvalue.
 
 4. __Time Evolution__
 
@@ -30,5 +32,8 @@ This equation describes the continuous and deterministic evolution of the wavefu
 
 ## Quantum Error Correction (QEC)
 
-For QEC, we need more than just the Four Postulates of quantum mechanics.  We also need _classical statistics_.
+For QEC, we need more than just the Four Postulates.  We also need _classical statistics_.
 
+### Example
+
+Given a quantum system with two states, ${ket:}
