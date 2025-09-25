@@ -20,6 +20,10 @@ Prof. William Oliver
 
 Prof. Isaac Chuang
 
+## Course Link
+
+https://courses.xpro.mit.edu/learn/course/course-v1:xPRO+QCRx1+R13/home
+
 ## Course 1 Schedule
 
 __Week 1: Ubiquity and Challenges of Noise__
