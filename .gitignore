@@ -1,5 +1,9 @@
 # Files ignored by GitHub
-# updated: Monday, September 22, 2025
+# updated: Thursday, September 25, 2025
 
 # MacOS folder metadata
 .DS_Store
+
+# draft and sandbox folders at any level
+**/drafts
+**/sandbox
