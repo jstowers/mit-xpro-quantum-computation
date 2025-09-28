@@ -4,6 +4,7 @@
 # MacOS folder metadata
 .DS_Store
 
-# draft and sandbox folders at any level
+# draft, sandbox, and image folders at any level
 **/drafts
 **/sandbox
+**/images

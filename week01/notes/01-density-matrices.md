@@ -6,6 +6,8 @@ Prof. Isaac Chuang, MIT
 
 ---
 
+## Lecture 1: Density Matrices: 
+
 ## Four Postulates of Quantum Mechanics
 
 1. __Wavefunction__
@@ -31,6 +33,45 @@ After measurement, the quantum state instantaneously _collapses_ into the specif
 _Schrödinger's equation_ governs how the state of a quantum system changes over time.
 
 This equation describes the continuous and deterministic evolution of the wavefunction, showing how the system progresses from one state to another.
+
+## Single Qubit Hilbert Space
+
+The basis states are:
+
+${\ket{0}} = \begin{pmatrix}1\\0\\\end{pmatrix}$
+
+${\ket{1}} = \begin{pmatrix}0\\1\\\end{pmatrix}$
+
+### Orthogonality
+
+These two states are mutually orthogonal.  Orthogonality is essential for quantum mechanics because:
+
+  1. when the quantum system is measured, it collapses into one of the eigenstates (basis states) corresponding to the observable being measured.
+
+  2. zero probability of overlap between state ${\ket{a}}$ and state ${\ket{b}}$.
+
+  3. perfect distinguishability between the states.  If a measurement finds the system in state ${\ket{a}}$, it definitively was not in state ${\ket{b}}$.
+
+
+### Proof of Orthogonality
+
+1. Calculate the inner product of the two basis states, ${\ket{\psi}}$ and ${\ket{\phi}}$
+
+  - The inner product is formed by multiplying the complex conjugate of ${\psi}$ by ${\phi}$
+
+2. Evaluate the inner product:
+
+  ${\bra{\psi}\ket{\phi}} = (1  0) \begin{pmatrix}0\\1\\\end{pmatrix}$ 
+
+                          = ${1 \cdot 0 + 0
+
+
+### Normalization
+
+These states are normalized.
+
+  - If you take the inner product of one state by itself, you get get 1.
+
 
 ## Quantum Error Correction (QEC)
 
@@ -84,7 +125,7 @@ Consider the two-part state, $\ket{\psi_{AB}}$.  We draw the state as a quantum 
 
 If B measures its part of the quantum state, how do we describe part A?
 
-  - The state of A will be a statistical combination depending on B's measurement result.
+  - The state of A will be a _statistical combination_ depending on B's measurement result.
 
   - If B measures 0, then A is 0.
 
@@ -107,13 +148,112 @@ Before measurement, B performs a Hadamard transform (H).
 
 The state of B before measurement is a superposition.  What about A?
 
+---
+
+## Lecture 2:  Density Matrix Properties
+
+A matrix, ${\rho}$, is a density matrix if and only if:
+
+1. the trace, ${Tr}$, of ${\rho}$ must equal 1.
+
+2. ${\rho}$ must be real and greater than or equal to 0.
+
+
+### Trace of a Square Matrix
+
+The trace of a _square_ matrix is the sum of its diagonal elements.
+
+For a square matrix, ${A}$, the trace with elements ${a_{ij}}$ will be:
+
+  ${Tr(A) = a_{11}} + a_{22} + a_{33} + ... + a_{nn}$ 
+
+
+A density matrix can be made from the _probabalistic_ combination of pure states:
+
+### Spectral Decomposition
+
+The spectral decomposition (or _eigendecomposition_) of a _diagonalizable_ matrix A is a factorization of the matrix into the product of its eigenvectors and eigenvalues.
+
+Here is the formula for matrix, ${A}$:
+
+  ${A} = {P} {DP^{-1}} $
+
+where ${P}$ is the matrix formed by the eigenvectors and ${D}$ is a diagonal matrix containing the corresponding eigenvalues.
+
+
+### State Vector
+
+A state vector is a mathematical object represented as a vector in a _complex vector space_ called a Hilbert space.
+
+### Pure State
+
+A pure quantum state, $\ket{\psi}$, is represented mathematically as a single state vector.
+
+For state 0, the vector notation is:
+
+  $\ket{\psi} = \ket{0} = \begin{pmatrix} 1 \\ 0 \\ \end{pmatrix}$
+
+For state 1, the vector notation is:
+
+  $\ket{\psi} = \ket{1} = \begin{pmatrix} 0 \\ 1 \\ \end{pmatrix}$
 
 
 
 
 
 
+### Infinite Unravelings
+
+The concept of infinite unravelings and the interpretation of density matrices in purified forms will be key ideas in understanding the intuition of QEC.
 
 
+## Single Qubit System
+
+A single qubit exists in a two-dimensional Hilber space.
+
+
+## Two Qubit System
+
+In a two qubit syste, two single qubit systems combine into one larger system.
+
+The combined system is a four-dimensional Hilbert space.
+
+The system requires 4 orthonormal basis vectors to form the computational basis.
+
+To compute the computational basis, you must calculate the four tensor products from the two single qubit states:
+
+1. $\ket{0}\ket{0} = \ket{00} = \ket{0} \otimes \ket{0}$
+
+2. $\ket{0}\ket{1} = \ket{01} = \ket{0} \otimes \ket{1}$
+
+3. $\ket{1}\ket{0} = \ket{10} = \ket{1} \otimes \ket{0}$
+
+4. $\ket{1}\ket{1} = \ket{11} = \ket{1} \otimes \ket{1}$
+
+## Tensor Product Calculation
+
+Consider two generic column vectors $\begin{pmatrix} a_0 \\ a_1 \\ \end{pmatrix}$ and $\begin{pmatrix} b_0 \\ b_1 \\ \end{pmatrix}$.
+
+To calculate the tensor product (${\otimes}$) of these two vectors:
+
+$\begin{pmatrix} a_0 \\ a_1 \\ \end{pmatrix} \otimes \begin{pmatrix} b_0 \\ b_1 \\ \end{pmatrix}$
+
+Place the second column vector inside the first column vector.  The first column vector values will scale (multiply) the second column vector values:
+
+$\begin{pmatrix} a_0 begin{pmatrix} b_0 \\ b_1 \\ \end \\ \end$
+
+## Quantum Tensor Product
+
+For a quantum system, each column vector represents a single qubit.
+
+## Generalization 
+
+Any two-qubit system can be described as a linear combination of the four computational basis vectors:
+
+$\ket{\psi} = \alpha_{00}{\ket{00}} + \alpha_{01}{\ket{01}} + \alpha_{10}{\ket{10}} + \alpha_{11}{\ket{11}}$
+
+How do you find the different coefficients, $\alpha$?
+
+- Take the inner product of $\ket{\psi}$.  That will cancel out all the basis vectors because they are orthogonal.
 
 
