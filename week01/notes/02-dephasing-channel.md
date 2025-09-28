@@ -76,3 +76,10 @@ The density matrix, $\rho$ is expressed as a sum over all possible states:
   $\rho = \displaystyle\sum_{i} p_i\ket{\psi_i}\bra{\psi_i}$
 
   $(1-p)(\alpha\ket{0} + \beta\ket{1})(\alpha\ket{0} + \beta\ket{1}) + p(\alpha\ket{0} - \beta\ket{1})(\alpha\ket{0} - \beta\ket{1})$
+
+
+The dephasing channel multiplies the _off-diagonal_ elements of the density matrix by some constant.
+
+In the Bloch sphere, when you multiply the off-diagonal elements by q:
+
+You're moving the Bloch sphere into the middle.  This goes from a sphere to an ellipsoid.  You shrink the Bloch sphere into an ellipsoid.  The vertical axis stays the same, but everything else shrinks by the factor.

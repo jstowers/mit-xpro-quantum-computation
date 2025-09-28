@@ -61,10 +61,6 @@ These two states are mutually orthogonal.  Orthogonality is essential for quantu
 
 2. Evaluate the inner product:
 
-  ${\bra{\psi}\ket{\phi}} = (1  0) \begin{pmatrix}0\\1\\\end{pmatrix}$ 
-
-                          = ${1 \cdot 0 + 0
-
 
 ### Normalization
 
@@ -92,14 +88,13 @@ How do you describe a two-state quantum system, $\ket{\psi}$ and $\ket{\phi}$?
 
 ### What is the Outer Product ($\otimes$)?
 
-The outer product, or _matrix product_, is the multiplication of two vectors to form a matrix.
+The outer product, or _matrix product_, is the multiplication of two vectors to form a matrix.  It is also called the projection operator.
 
 -  The "ket" vector, $\ket{\psi}$, represents a vector in the complex vector space called a Hilbert space.  It is a column vector with dimension n x 1.
 
 -  The "bra" vector, $\bra{\psi}$, represents a linear functional and is a row vector.  It is the _conjugate transpose_ of the ket and has a dimension 1 x n.
 
-$\ket{\psi}\bra{\psi} = [1] x [0, 1] =  [1x0  1x1] =  [0 1]$
-                        [0]             [0x0  0x1]    [0 0]
+$\ket{\psi}\bra{\psi} = \begin{pmatrix}1\\0\\\end{pmatrix} \begin{pmatrix}1 & 0\end{pmatrix}$
 
 
 ### Pure States
