@@ -102,8 +102,76 @@ $\ket{\psi}\bra{\psi} = [1] x [0, 1] =  [1x0  1x1] =  [0 1]$
                         [0]             [0x0  0x1]    [0 0]
 
 
+### Pure States
 
-### Density Matrix
+A quantum system in a pure state means it is not entangled with its environment or any other system.
+
+A pure state, $\ket{\psi}$, is represented mathematically as a single state vector.  
+
+Here are examples of two pure states, $\ket{0}$ and $\ket{1}$:
+
+  $\ket{\psi} = \ket{0} = \begin{pmatrix}1\\0\\\end{pmatrix}$
+
+  $\ket{\psi} = \ket{1} = \begin{pmatrix}0\\1\\\end{pmatrix}$
+
+Note that a coherent superposition of pure states is also a pure state:
+
+  $\alpha\ket{0} + \beta\ket{1}$
+
+### Why do Density Matrices Matter?
+
+The density matrix formulation is designed to compute the _expectation value_ of any observable, $\hat{A}$, in a quantum system.
+
+#### Key Observables
+
+Key observables in a quantum system include:
+
+1. Position ($\hat{x}$)
+
+2. Momentum ($\hat{p}$)
+
+3. Spin ($\hat{S}$)
+
+4. Angular momentum ($\hat{L}$)
+
+5. Hamiltonian (total energy of system) ($\hat{H}$)
+
+
+### Density Matrix of a Pure State
+
+The density matrix representation, $\rho$, of a pure state is the _outer product_ of the pure state with itself.
+
+The __outer product__ represents a complete, unambiguous description of the pure state with no classical uncertainty.
+
+
+The __outer product__ is found by multiplying the pure state vector, $\ket{\psi}$, with its conjugate transpose, $\bra{\psi}$.
+
+  $\rho = \ket{\psi}\bra{\psi}$
+
+Example:
+
+For the pure state, $\ket{0}$, the density matrix is:
+
+  $\rho = \ket{0}\bra{0}$
+
+  $\rho = \begin{pmatrix}1\\0\\\end{pmatrix} \begin{pmatrix}1 & 0\end{pmatrix}$
+
+  $\rho = \begin{pmatrix} 1 & 0 \\ 0 & 0\end{pmatrix}$
+
+For the pure state, $\ket{1}$, the density matrix is:
+
+  $\rho = \ket{1}\bra{1}$
+
+  $\rho = \begin{pmatrix}0\\1\\\end{pmatrix} \begin{pmatrix}0 & 1\end{pmatrix}$
+
+  $\rho = \begin{pmatrix} 0 & 0 \\ 0 & 1\end{pmatrix}$
+
+
+### Density Matrix of a Mixed State
+
+The density matrix, $\rho$, of a mixed state is a statistical mixture of  pure states with individual weights or probabilities:
+
+  $\rho = \displaystyle\sum_{i} p_i\ket{\psi_i}\bra{\psi_i}$
 
 The sum of two outer product vectors yields the density matrix, ${\rho}$:
 

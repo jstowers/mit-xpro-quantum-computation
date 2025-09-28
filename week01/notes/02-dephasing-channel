@@ -1,0 +1,78 @@
+# Dephasing Channel on the Bloch Sphere
+
+Sunday, September 28, 2025
+
+---
+
+## Introduction
+
+To be useful, quantum computers must be built from _robust_ elements.
+
+Gate fidelity is one metric that quantifies the robustness of a qubit.
+
+## Gate Fidelity
+
+Gate fidelity measures the _accuracy_ of a quantum gate's operation.
+
+Expressed as a percent (e.g. 99.9%), gate fidelity quantifies how closely the gate's actual execution on a physical quantum computer matches the ideal, noise-free intended operation.
+
+Intuitively, gate fidelity is related to the _number_ of gates, on average, that can be applied to a qubit before an error occurs and the qubit state is lost.
+
+## Loss of Quantum Information
+
+There are two fundamental ways that a qubit can lose quantum information:
+
+1. __energy exchange with the environment__ - this is related to the coherence time, ${t_1}$
+
+2. __dephasing__ - a loss of coherence in the superposition state
+
+The coherence time, ${t_2}$, is related to both the energy exchange and dephasing processes.
+
+## Treating Qubit Error
+
+This section will discuss one method to treat qubit error on the Bloch sphere using _probabilistic error channels_ based on qubit gates.
+
+This model provides a simple visualization of concepts like depolarization and dephasing as represented by a density matrix.
+
+## Quantum Channels
+
+A quantum channel is a _probablistic mixture_ of simple channels.
+
+### Dephasing Channel
+
+The simplest channel is the dephasing channel.  
+
+A dephasing channel introducs noise by randomizing the phases of a quantum system.  The system loses its coherence and transitions to a classical-like _probabilitic mixture_ of states.
+
+1. probability ${1-p}$ 
+
+    Do nothing.  Apply the identity operator.
+
+2. probability ${p}$
+
+    Apply the Z-gate (${\sigma_z}$).
+
+    The Z-gate is a single-qubit gate that leaves the $\ket{0}$ unchanged but flips the phase of the $\ket{1}$ state to negative, resulting in a change to $\ket{-1}$.
+
+    In matrix notation, the Z-gate is represented as:
+
+    $Z = \begin{pmatrix}1 & 0\\0 & -1\\\end{pmatrix}$
+
+### Example
+
+Begin with a quantum state $\alpha\ket{0} + \beta\ket{1}$.  Place it into the dephasing channel:
+
+(1-p) probability:      
+
+  $\alpha\ket{0} + \beta\ket{1}$
+
+p probability:          
+
+  $\alpha\ket{0} - \beta\ket{1}$
+
+
+The density matrix, $\rho$ is expressed as a sum over all possible states:
+
+  $\rho = \displaystyle\sum_{i} p_i\ket{\psi_i}\bra{\psi_i}$
+
+  $(1-p)(\alpha\ket{0} + \beta\ket{1})(\alpha\ket{0} + \beta\ket{1}) + p(\alpha\ket{0} - \beta\ket{1})(\alpha\ket{0} - \beta\ket{1})$
