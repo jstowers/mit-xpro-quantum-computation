@@ -161,6 +161,17 @@ For the pure state, $\ket{1}$, the density matrix is:
 
   $\rho = \begin{pmatrix} 0 & 0 \\ 0 & 1\end{pmatrix}$
 
+### Why use the Outer Product?
+
+ The outer product $|\psi\rangle\langle\psi|$ elegantly:
+ 
+ 1. captures the projective nature of quantum states
+ 
+ 2. ensures correct computation of physical quantities
+ 
+ 3. satisfies mathematical requirements for a state operator
+ 
+ 4. generalizes to more complex scenarios. 
 
 ### Density Matrix of a Mixed State
 
