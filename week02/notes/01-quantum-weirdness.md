@@ -20,6 +20,17 @@ In November 1964, John Bell published a seminal paper in _Physics_ called "On th
 
 Bell concluded that the arguments of quantum mechanics _contradict_ classical probability theory.
 
+## Bell's Inequality Experiment
+
+Bell's inequality tests whether nature obeys __local realism__ or __quantum mechanics__.
+
+Local realism, as defined in classical physics, shows that properties are well-defined and unaffected by distant measurements.
+
+Conversely, quantum mechanics allows non-local correlations via entanglement.
+
+Bell's inequality quantifies correlations between measurements on two entangled particles to distinguish between local hidden variable (LHV) theories and quantum predictions.
+
+
 ## Bell's Argument
 
 Talk about it as a game that two players are trying to cooperatively play.
