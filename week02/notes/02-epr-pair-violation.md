@@ -39,3 +39,45 @@ Friday, October 9, 2025
         2. project thte state onto the __eigenstates__ corresponding to those eigenvalues, with probabilities determined by the state.
 
     - If they measure with the observable, ${\sigma_y}$, they get _opposite_ outcomes.
+
+
+## Example
+
+Alice measures $\ket{0}$.
+
+Bob has qubit $\ket{0}$ and measures it with $\frac{\sigma_x + \sigma_z}{\sqrt{2}}$
+
+What is the probability that Bob gets the eigenvector +1?
+
+- The expectation of Bob's value is:
+
+    $\bra{0}(\frac{\sigma_x + \sigma_z}{\sqrt{2}})\ket{0}$
+
+
+## EPR Paradox
+
+The Einstein, Podolsky, Rosen (EPR) paradox presents a thought experiment on quantum weirdness.
+
+Imagine two, distant entangled particles.  For example, two polarization-entangled photons, one in Alice's lab and one in Bob's lab.  The labs are separated by a very large distance.
+
+If Alice and Bob measure in the _same_ measurement basis, they will have correlated measurement results.
+
+ - If Alice measures $H$ polarization, then Bob will measure $V$ polarization.
+
+But if Alice and Bob measure in _different_ measurement bases, the result may change.
+
+Einstein called this "spooky action at a distance." He believed there were "hidden variables" that were not captured in the quantum theory that predetermine the measurement result.  In other worlds, quantum theory was incomplete.
+
+
+## Polarization of Light with Nonlinear Crystals
+
+In most materials, the polarization (displacement of electric charges) induced by light is linear.  The polarization is proportional to the electric field:
+
+  $P \propto E$
+
+
+But in __nonlinear crystals__, the polarization includes higher-order terms:
+
+  $P \propto E + \chi^{(2)} E^2 + \chi^{(3)} E^3 + ...
+
+Common nonlinear crystals include Beta-Barium Borate (BBO) and Potassium Titanyl Phosphate (KTP).
