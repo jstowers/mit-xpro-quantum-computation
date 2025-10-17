@@ -1,13 +1,15 @@
 # Files ignored by GitHub
-# updated: Friday, October 10, 2025
+# updated: Thursday, October 16, 2025
 
 # MacOS folder metadata
 .DS_Store
 
 # ignored folders
+**/concept-questions
 **/drafts
 **/images
 **/questions
 **/quiz
 **/reference
+**/reflect-review
 **/sandbox
